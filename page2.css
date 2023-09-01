@@ -1,0 +1,102 @@
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.container h1{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sidebar img{
+    width: 25px;
+}
+
+.shortcut-links i{
+    margin-left: 5px;
+}
+
+.shortcut-links .btn-bg{
+    background-color: var(--MAIN-COLOR);
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+.list-container .vid-list{
+    position: relative;
+}
+
+.layer{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.layer h3 img{
+    width: 40px;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-50%, -50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 43%;
+    opacity: 1;
+}
+
+.vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px){
+    .container, .large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+        overflow: hidden;
+    }
+
+    .layer{
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 901px)  {
+        .container {
+            overflow: hidden;
+        }      
+        
+        .shortcut-links .btn-bg{
+           font-size: .8rem;
+            padding: 12px 10px;
+        }
+
+        .layer{
+            height: 85%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+}
